@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* INICIO HEADER */
+.nav {
+  background-color: #181818;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 28px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #ddd;
+  padding: 20px;
+}
+
+.nav-list a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.nav-list li:hover {
+  transform: scale(1.1);
+}
+/* FIM HEADER */
+
+/* INICIO MAIN */
+.main {
+  width: 100%;
+  background-color: #000;
+  height: calc(100vh - 80px);
+  background-image: url("/html-portfolio-trabalho-2/images/programador.png");
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.main h1 {
+  color: #ffffff;
+  font-size: 54px;
+}
+
+.main p a {
+  font-size: 24px;
+  font-style: italic;
+  color: #1e96fc;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.main p a:hover {
+  text-decoration: underline;
+}
+
+.call-to-action {
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 0;
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.9s;
+}
+
+.action:hover,
+.call-to-action:hover {
+  transition: 0.9s;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.main a {
+  text-decoration: none;
+  color: #181818;
+}
+/* FIM MAIN */
+
+/* INICIO ABOUT */
+.about {
+  background-color: #ffffff;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about div {
+  max-width: 50%;
+  padding-right: 40px;
+}
+
+.about img {
+  max-width: 450px;
+  border-radius: 8px;
+}
+
+.about div h2 {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+/* FIM ABOUT */
+
+/* INICIO PROJECTS */
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.projects h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.projects p {
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.project-list {
+  width: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.project-list-2 {
+  width: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects img {
+  width: 22%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  opacity: 0.85;
+  transition: 0.9s;
+  border-radius: 10px;
+}
+
+.projects img:hover {
+  mask-position: 100%;
+  opacity: 1;
+  transform: scale(1.08);
+  transition: 0.9s;
+  object-fit: cover;
+  transition-delay: 0.6s;
+}
+
+.action {
+  background-color: #181818;
+  border: 0;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+/* FIM PROJECTS */
+
+/* INICIO CONTATO */
+
+.contacts {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7a7676;
+  padding: 1rem;
+}
+
+.form-image img {
+  width: 40rem;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.form-header {
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.form-header h2 {
+  font-size: 40px;
+}
+
+.form-header h2::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #7a7676;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.input-group {
+  display: block;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+  align-items: flex-start;
+}
+
+.input-box input {
+  margin: 0.6rem 5rem;
+  padding: 1.1rem 7rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+  font-size: 0.9rem;
+}
+
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+  outline: 1px solid #7a7676;
+}
+
+.input-box label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+  opacity: 0.5;
+}
+
+.continue-btn button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: #7a7676;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.continue-btn button:hover {
+  background-color: #7b7676f1;
+}
+
+.continue-btn button a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* FIM CONTATO */
+
+/* INICIO RODAPE */
+footer {
+  width: 100%;
+  background-color: #181818;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer p {
+  margin-left: 12px;
+}
+/* FIM RODAPE */
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1330px) {
+  /* INICIO MAIN */
+  .main h1 {
+    font-size: 45px;
+  }
+
+  .main p {
+    font-size: 18px;
+  }
+
+  .main {
+    background-size: cover;
+  }
+  /* FIM MAIN */
+
+  /* INICIO SOBRE */
+  .about {
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .about div {
+    max-width: 80%;
+  }
+
+  .about div h2 {
+    font-size: 45px;
+  }
+
+  .about img {
+    width: 80%;
+    margin-top: 30px;
+  }
+  /* FIM SOBRE */
+
+  /* INICIO PROJETOS */
+  .projects img {
+    width: 27.5%;
+  }
+  /* FIM PROJETOS */
+
+  /*INICIO CONTATO */
+
+  .form-image {
+    display: none;
+  }
+
+  .contacts-container {
+    width: 50%;
+  }
+
+  .form {
+    width: 100%;
+  }
+  /* FIM CONTATO */
+
+  /* INICIO RODAPE */
+  footer {
+    flex-direction: column;
+  }
+
+  footer h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  footer p {
+    margin: 0;
+  }
+  /* FIM RODAPE */
+}
+
+@media (max-width: 1064px) {
+  /* INICIO NAVBAR */
+  .nav {
+    justify-content: center;
+    align-items: center;
+  }
+  /* FIM NAVBAR */
+
+  /*INICIO CONTATO */
+  .contacts-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-box input {
+    margin: 0.6rem 0rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+  }
+
+  .input-box label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000c0;
+  }
+  /* FIM CONTATO */
+}
